@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #0b0b0c; color: #f8fafc; font-family: Arial, Helvetica, sans-serif; }
+button, input { font: inherit; }
+.range { accent-color: #ef233c; }
+.scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+.scrollbar::-webkit-scrollbar-thumb { background: #4a4a4a; border-radius: 999px; }
+.wave span { display: inline-block; width: 3px; background: #ef233c; border-radius: 2px; animation: pulse .8s ease-in-out infinite alternate; }
+.wave span:nth-child(2) { height: 20px; animation-delay: .16s; }.wave span:nth-child(3) { height: 10px; animation-delay: .32s; }.wave span:nth-child(4) { height: 18px; animation-delay: .48s; }.wave span:nth-child(5) { height: 8px; animation-delay: .64s; }
+@keyframes pulse { from { transform: scaleY(.35); } to { transform: scaleY(1); } }
